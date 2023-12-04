@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+void main(){
+setlocale(LC_ALL,"");
+printf("Olá, aprendendo condicionais no C \n");
+//Criando um váriavel para testes
+int a = 5;
+if (a == 5)
+{
+    printf("O valor da variavel é 5 \n");
+}
+if (a % 2 == 1)
+{
+    printf("O valor da variavel é ímpar \n");
+}
+else
+{
+    printf("O valor da variavel é par \n");
+}
+system("pause");
+}
