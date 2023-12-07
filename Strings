@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+void main(){
+setlocale(LC_ALL,"");
+char palavra [250];
+printf("Digite uma palavra\n");
+//Limpar o buffer para poder ler os caracteres
+setbuf(stdin,0);
+fgets(palavra,250,stdin);
+palavra[strlen(palavra)-1]='\0';
+printf("%s",palavra);
+}
