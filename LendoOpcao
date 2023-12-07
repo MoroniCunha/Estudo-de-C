@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+void main(){
+setlocale(LC_ALL,"");
+//Lendo a opção escolhida pelo usuario
+int op;
+printf("Escolha a opção abaixo\nOpção - 1 \nOpção - 2 \nOpção - 3\n");
+scanf("%d",&op);
+switch(op){
+case 1:
+printf("\nOpção 1 escolhida");
+break;
+case 2:
+printf("\nOpção 2 escolhida");
+break;
+case 3:
+printf("\nOpção 3 escolhida");
+break;
+default:
+printf("\nOpção invalida");
+break;
+}
+}
