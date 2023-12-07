@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+void main(){
+setlocale(LC_ALL,"");
+//Definindo variaveis, para realizar contagens
+//Estudo "DO" e "WHILE"
+int a = 1;
+printf("Contagem progressiva usando WHILE\n");
+while (a<=10)
+{
+    printf("%d \n",a);
+    a++;
+}
+printf("\nContagem regressiva usando WHILE\n");
+int b=10;
+while (b>=1){
+printf("%d \n",b);
+b--;}
+
+printf("\nContagem de 2 em 2 usando DO e WHILE\n");
+int c=0;
+do{printf("%d \n",c);
+c = c+2;
+}while (c<=10);
+
+//Estudo "FOR"
+int cont;
+printf("\nFazendo a tabuada do 3 utilizando FOR\n");
+for(cont=1; cont<=10; cont++){
+    printf("3 X %d = %d \n",cont, 3*cont);
+}
+printf("\nFazendo contagem regressiva usando FOR\n");
+for(cont = 10; cont>=0 ; cont= cont -1){
+    printf("%d\n",cont);
+}
+}
