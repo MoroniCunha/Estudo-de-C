@@ -1,0 +1,40 @@
+include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+void main(){
+setlocale(LC_ALL,"");
+//Definindo variaveis
+int a;
+char b;
+printf("Digite uma opção de 1 a 3 \n");
+scanf("%d",&a);
+switch(a){
+    case 1:
+        printf("Opção escolhida 1");
+        break;
+    case 2:
+        printf("Opção escolhida 2");
+        break;
+    case 3:
+        printf("Opção escolhida 3");
+        break;
+    default:
+        printf("Opção invalida");
+}
+//Também funciona em variaveis do tipo CHAR
+fflush(stdin);
+printf("\nDigite uma letra \n");
+scanf("%c",&b);
+switch (b){
+    case 'a':
+    case 'e':
+    case 'i':
+    case 'o':
+    case 'u':
+        printf("\nA letra digitada é uma vogal");
+    break;
+    default:
+        printf("\nA letra digitada é uma consoante");
+    }
+}
