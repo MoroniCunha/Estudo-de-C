@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+void main(){
+setlocale(LC_ALL,"");
+//Para realizar uma condicional multipla, deve-se utilizar '&&', Essa condi��o apenas funcionase ambas forem verdadeiras
+int a;
+printf("Digite o valor para uma variavel inteira \n");
+scanf( "%d",&a);
+if(a>5 && a<10)
+{
+    printf("A variavel 'a' est� entre 5 e 10 \n");
+}
+//
+if(a>5 || a>10)
+{
+    printf("A variavel 'a' � maior que 5 ou 10 \n");
+}
+//Misturando conectivos
+if((a>5 && a<10)|| a ==20){
+    printf("A variavel a est� entre 5 e 10, ou ela vale 20");
+}
+}
